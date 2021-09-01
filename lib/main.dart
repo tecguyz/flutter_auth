@@ -16,11 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.purple,
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple)
-            .copyWith(secondary: Colors.purple),
-      ),
+      theme: ThemeData.dark().copyWith(primaryColor: Colors.purple),
       home: const LoginPage(),
     );
   }
