@@ -1,3 +1,4 @@
+import 'package:firebase_login/auth/authentication.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -36,7 +37,9 @@ class _LoginPageState extends State<LoginPage> {
             padding:
                 const EdgeInsets.symmetric(horizontal: 10.0, vertical: 12.0),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                signInWithGoogle(context);
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
